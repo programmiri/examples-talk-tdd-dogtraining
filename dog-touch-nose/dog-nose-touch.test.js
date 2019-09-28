@@ -21,18 +21,12 @@ describe("Our lovely Dog", () => {
 		expect(ourDog.looksAtFingers).toBeTruthy();
 	});
 
-	it("can be rewarded with a Ball", () => {
+	describe("can be rewarded with", () => {
 		const ourDog = new Dog("Ruby");
-		expect(ourDog.looksAtFingers("Ball")).toEqual("🐶🎉 *rewarded*");
-	});
-
-	it("can be rewarded with a Frolic", () => {
-		const ourDog = new Dog("Ruby");
-		expect(ourDog.looksAtFingers("Frolic")).toEqual("🐶🎉 *rewarded*");
-	});
-
-	it("can be rewarded with a Playtime", () => {
-		const ourDog = new Dog("Ruby");
-		expect(ourDog.looksAtFingers("Playtime")).toEqual("🐶🎉 *rewarded*");
+		["Frolic", "Ball", "Playtime"].forEach(treat => {
+			it(`${treat}`, () => {
+				expect(ourDog.looksAtFingers(treat)).toEqual("🐶🎉 *rewarded*");
+			});
+		});
 	});
 });
