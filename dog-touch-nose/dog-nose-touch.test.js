@@ -15,4 +15,9 @@ describe("Our lovely Dog", () => {
 		const ourDog = new Dog("Ruby");
 		expect(ourDog.touch()).toEqual("❓❓🐶❓❓");
 	});
+
+	it("can look at our fingers", () => {
+		const ourDog = new Dog("Ruby");
+		expect(ourDog.looksAtFingers).toBeTruthy();
+	});
 });
