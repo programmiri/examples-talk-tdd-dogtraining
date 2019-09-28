@@ -1,0 +1,10 @@
+{
+  "name": "examples-talk-dogtraining-tdd",
+  "version": "0.0.1",
+  "description": "Examples to my talk about dog training and test driven development",
+  "main": "index.js",
+  "repository": "https://github.com/programmiri/examples-talk-tdd-dogtraining",
+  "author": "Mirjam Bäuerlein",
+  "license": "MIT",
+  "private": true
+}
