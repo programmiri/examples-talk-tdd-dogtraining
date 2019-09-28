@@ -1,2 +1,3 @@
-# examples-talk-tdd-dogtraining
-Examples to my talk about test driven development and dogtraining.
+# Code examples
+## Talk about dog training and test-driven development
+Code shown in my talk.
