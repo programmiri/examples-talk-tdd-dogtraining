@@ -25,4 +25,9 @@ describe("Our lovely Dog", () => {
 		const ourDog = new Dog("Ruby");
 		expect(ourDog.looksAtFingers("Ball")).toEqual("🐶🎉 *rewarded*");
 	});
+
+	it("can be rewarded with a Frolic", () => {
+		const ourDog = new Dog("Ruby");
+		expect(ourDog.looksAtFingers("Frolic")).toEqual("🐶🎉 *rewarded*");
+	});
 });
