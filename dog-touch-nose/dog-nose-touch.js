@@ -6,6 +6,8 @@ class Dog {
 	touch() {
 		return "❓❓🐶❓❓";
 	}
+
+	looksAtFingers() {}
 }
 
 export { Dog };
