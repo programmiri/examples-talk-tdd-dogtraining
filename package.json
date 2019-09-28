@@ -1,10 +1,24 @@
 {
-  "name": "examples-talk-dogtraining-tdd",
-  "version": "0.0.1",
-  "description": "Examples to my talk about dog training and test driven development",
-  "main": "index.js",
-  "repository": "https://github.com/programmiri/examples-talk-tdd-dogtraining",
-  "author": "Mirjam Bäuerlein",
-  "license": "MIT",
-  "private": true
+	"name": "examples-talk-dogtraining-tdd",
+	"version": "0.0.1",
+	"description": "Examples to my talk about dog training and test driven development",
+	"main": "index.js",
+	"repository": "https://github.com/programmiri/examples-talk-tdd-dogtraining",
+	"author": "Mirjam Bäuerlein",
+	"license": "MIT",
+	"private": true,
+	"devDependencies": {
+		"@babel/core": "^7.6.2",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/plugin-proposal-private-methods": "^7.6.0",
+		"@babel/preset-env": "^7.6.2",
+		"babel-jest": "^24.9.0",
+		"eslint": "^5.15.3",
+		"eslint-plugin-import": "^2.16.0",
+		"jest": "^24.9.0"
+	},
+	"scripts": {
+		"test": "jest ./*",
+		"watch": "jest --watch ./*"
+	}
 }
