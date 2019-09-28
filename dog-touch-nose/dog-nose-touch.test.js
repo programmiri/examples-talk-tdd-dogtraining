@@ -5,4 +5,9 @@ describe("Our lovely Dog", () => {
 		const ourDog = new Dog();
 		expect(ourDog).toBeTruthy();
 	});
+
+	it('is named "Ruby"', () => {
+		const ourDog = new Dog("Ruby");
+		expect(ourDog.name).toEqual("Ruby");
+	});
 });
