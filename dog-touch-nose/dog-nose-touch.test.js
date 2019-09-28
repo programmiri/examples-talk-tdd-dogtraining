@@ -20,4 +20,9 @@ describe("Our lovely Dog", () => {
 		const ourDog = new Dog("Ruby");
 		expect(ourDog.looksAtFingers).toBeTruthy();
 	});
+
+	it("can be rewarded with a Ball", () => {
+		const ourDog = new Dog("Ruby");
+		expect(ourDog.looksAtFingers("Ball")).toEqual("🐶🎉 *rewarded*");
+	});
 });
