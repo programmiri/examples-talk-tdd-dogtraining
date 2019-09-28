@@ -8,7 +8,7 @@ class Dog {
 	}
 
 	looksAtFingers(treat) {
-		if (treat === "Ball" || treat === "Frolic") {
+		if (treat === "Ball" || treat === "Frolic" || treat === "Playtime") {
 			return "🐶🎉 *rewarded*";
 		}
 	}
