@@ -10,4 +10,9 @@ describe("Our lovely Dog", () => {
 		const ourDog = new Dog("Ruby");
 		expect(ourDog.name).toEqual("Ruby");
 	});
+
+	it('is confused and does nothing I say "Touch" initially', () => {
+		const ourDog = new Dog("Ruby");
+		expect(ourDog.touch()).toEqual("❓❓🐶❓❓");
+	});
 });
