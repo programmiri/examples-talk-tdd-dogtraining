@@ -4,6 +4,7 @@ class Dog {
 	}
 
 	#rewards = ["Frolic", "Ball", "Playtime"];
+	#punishments = ["Petting on the Head", "Hugging", "Loud cheering"];
 
 	touch() {
 		return "❓❓🐶❓❓";
@@ -12,6 +13,9 @@ class Dog {
 	looksAtFingers(treat) {
 		if (this.#rewards.includes(treat)) {
 			return "🐶🎉 *rewarded*";
+		}
+		if (this.#punishments.includes(treat)) {
+			return "NO! 🐶🛑";
 		}
 	}
 }
