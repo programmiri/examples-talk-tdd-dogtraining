@@ -29,4 +29,13 @@ describe("Our lovely Dog", () => {
 			});
 		});
 	});
+
+	describe("is punished with", () => {
+		const ourDog = new Dog("Ruby");
+		["Frolic", "Ball", "Playtime"].forEach(treat => {
+			it(`${treat}`, () => {
+				expect(ourDog.looksAtFingers(treat)).toEqual("NO! 🐶🛑");
+			});
+		});
+	});
 });
