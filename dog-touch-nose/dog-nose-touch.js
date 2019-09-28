@@ -3,12 +3,14 @@ class Dog {
 		this.name = name;
 	}
 
+	#rewards = ["Frolic", "Ball", "Playtime"];
+
 	touch() {
 		return "❓❓🐶❓❓";
 	}
 
 	looksAtFingers(treat) {
-		if (treat === "Ball" || treat === "Frolic" || treat === "Playtime") {
+		if (this.#rewards.includes(treat)) {
 			return "🐶🎉 *rewarded*";
 		}
 	}
