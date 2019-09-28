@@ -7,7 +7,11 @@ class Dog {
 		return "❓❓🐶❓❓";
 	}
 
-	looksAtFingers() {}
+	looksAtFingers(treat) {
+		if (treat === "Ball") {
+			return "🐶🎉 *rewarded*";
+		}
+	}
 }
 
 export { Dog };
