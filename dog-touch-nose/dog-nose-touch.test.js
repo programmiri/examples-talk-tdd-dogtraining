@@ -81,6 +81,17 @@ describe("Our lovely Dog", () => {
 			ourDog.looksAtFingers("Hugging");
 			expect(ourDog.touch()).toEqual("❓❓🐶❓❓");
 		});
+
+		it("punishment counters exactly two rewards", () => {
+			const ourDog = new Dog("Ruby");
+			const enoughTimesRewarded = 5;
+			[...Array(enoughTimesRewarded)].forEach(time =>
+				ourDog.looksAtFingers("Frolic")
+			);
+			ourDog.looksAtFingers("Hugging");
+			[...Array(2)].forEach(time => ourDog.looksAtFingers("Ball"));
+			expect(ourDog.touch()).toEqual("🐶💡 *touch*");
+		});
 	});
 });
 
