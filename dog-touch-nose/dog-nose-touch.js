@@ -5,10 +5,12 @@ class Dog {
 
 	#rewards = ["Frolic", "Ball", "Playtime"];
 	#punishments = ["Petting on the Head", "Hugging", "Loud cheering"];
+
+	#fingerLookingRewardThreshold = 5;
 	#fingerLookingRewarded = 0;
 
 	touch() {
-		if (this.#fingerLookingRewarded >= 5) {
+		if (this.#fingerLookingRewarded >= this.#fingerLookingRewardThreshold) {
 			return "🐶💡 *touch*";
 		}
 		return "❓❓🐶❓❓";
