@@ -17,6 +17,7 @@ class Dog {
 		if (this.#punishments.includes(treat)) {
 			return "NO! 🐶🛑";
 		}
+		return "Whatever. 🐶";
 	}
 }
 
