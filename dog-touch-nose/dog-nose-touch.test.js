@@ -38,4 +38,13 @@ describe("Our lovely Dog", () => {
 			});
 		});
 	});
+
+	describe("does not react to", () => {
+		const ourDog = new Dog("Ruby");
+		["Dry Food", "Praise", "Sausage", "Smile"].forEach(treat => {
+			it(`${treat}`, () => {
+				expect(ourDog.looksAtFingers(treat)).toEqual("Whatever. 🐶");
+			});
+		});
+	});
 });
