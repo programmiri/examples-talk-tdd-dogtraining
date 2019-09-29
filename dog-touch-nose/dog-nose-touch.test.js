@@ -59,7 +59,21 @@ describe("Our lovely Dog", () => {
 
 			expect(ourDog.touch()).toEqual("🐶💡 *touch*");
 		});
+
+		it(`neutral things doesn't count as reward`, () => {
+			const ourDog = new Dog("Ruby");
+			const enoughTimesRewarded = 5;
+
+			[...Array(enoughTimesRewarded - 1)].forEach(time => {
+				ourDog.looksAtFingers("Ball");
+			});
+			ourDog.looksAtFingers("Praise");
+
+			expect(ourDog.touch()).toEqual("❓❓🐶❓❓");
+		});
 	});
 });
+
+
 
 
