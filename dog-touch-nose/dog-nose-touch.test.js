@@ -47,4 +47,16 @@ describe("Our lovely Dog", () => {
 			});
 		});
 	});
+
+	describe('can learn "Touch" based on rewards and repetition', () => {
+		it(`shows right behavior after 5 trainings with rewards`, () => {
+			const ourDog = new Dog("Ruby");
+			ourDog.looksAtFingers("Ball");
+			ourDog.looksAtFingers("Ball");
+			ourDog.looksAtFingers("Ball");
+			ourDog.looksAtFingers("Ball");
+			ourDog.looksAtFingers("Ball");
+			expect(ourDog.touch()).toEqual("🐶💡 *touch*");
+		});
+	});
 });
