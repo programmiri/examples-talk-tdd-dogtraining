@@ -22,6 +22,7 @@ class Dog {
 			return "🐶🎉 *rewarded*";
 		}
 		if (this.#punishments.includes(treat)) {
+			this.#fingerLookingRewarded -= 2;
 			return "NO! 🐶🛑";
 		}
 		return "Whatever. 🐶";
@@ -29,3 +30,4 @@ class Dog {
 }
 
 export { Dog };
+
