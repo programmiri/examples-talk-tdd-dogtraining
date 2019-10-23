@@ -1,5 +1,7 @@
 # A Tale About Dog Training and Test-Driven Development
-Implementation of the code shown as example in my talk at [RuhrJS 2019](https://ruhrjs.de/).
+Implementation of the code shown as example in my talk at [RuhrJS 2019](https://ruhrjs.de/) and [FrankenJS](http://frankenjs.org/). 
+
+In hope to enable a better understanding how my workflow was, I comitted every step on it's own, so starting with the first commit you can follow my workflow step by step. 
 
 
 ## Resources
