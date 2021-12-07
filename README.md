@@ -21,13 +21,12 @@ Test Driven Development is the best thing that has happened to software design
 https://www.thoughtworks.com/insights/blog/test-driven-development-best-thing-has-happened-software-design
 
 
-
-[1] Test Driven Development By Example, Kent Beck
-[2] Growing Object-Oriented Software, Guided by Tests, Steve Freeman, Nat Pryce
-[3] Test double, Martin Fowler
-[4] Clean Code, Chapter 10: Classes The Single Responsibility Principle, Robert C. Martin,
-[5] Growing Object-Oriented Software, Guided by Tests, Chapter 2, Tell, Don’t Ask, Steve Freeman, Nat Pryce
-[6] Yagni, Martin Fowler
+- Test Driven Development By Example, Kent Beck
+- Growing Object-Oriented Software, Guided by Tests, Steve Freeman, Nat Pryce
+- Test double, Martin Fowler
+- Clean Code, Chapter 10: Classes The Single Responsibility Principle, Robert C. Martin,
+- Growing Object-Oriented Software, Guided by Tests, Chapter 2, Tell, Don’t Ask, Steve Freeman, Nat Pryce
+- Yagni, Martin Fowler
 
 
 ### More about dog training
